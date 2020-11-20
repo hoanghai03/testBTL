@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Cart - Vincent</title>
+    <link rel="shortcut icon" href="imgs/fav.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <div class="hearder_left-before">
+                <div class="header_left-phone">+1 215 456 15 15</div>
+                <div class="header_left-time">8:00 am – 11:30 pm</div>
+            </div>
+        </div>
+        <div class="header_mid">
+            <div class="header_mid-logo">
+                <a href="#" class="header_mid-link"></a>
+            </div>
+            <nav class="header_menu_cont">
+                <ul id="header_menu_content">
+                    <li class="header_menu_cont-li"><a href="index.html">Home</a>
+                        <ul class="sub-menu">
+                            <li class="item"><a href="">Home 1</a></li>
+                            <li class="item"><a href="">Home 2</a></li>
+                            <li class="item"><a href="">Home 3</a></li>
+                            <li class="item"><a href="">Home 4</a></li>
+                            <li class="item"><a href="">Home 5</a></li>
+                            <li class="item"><a href="">Home 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_cont-li"><a href="#">Menu</a>
+                        <ul class="sub-menu">
+                            <li class="item"><a href="">Menu 1</a></li>
+                            <li class="item"><a href="">Menu 2</a></li>
+                            <li class="item"><a href="">Menu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_cont-li"><a href="#">Features</a>
+                        <ul class="sub-menu">
+                            <li class="item"><a href="">Typography</a></li>
+                            <li class="item"><a href="">Fullscreen Gallery</a></li>
+                            <li class="item"><a href="">Error 404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_cont-li"><a href="#">About</a>
+                        <ul class="sub-menu">
+                            <li class="item"><a href="">About 1</a></li>
+                            <li class="item"><a href="">About 2</a></li>
+                            <li class="item"><a href="">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_cont-li"><a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li class="item"><a href="">Blog Fullscreen</a></li>
+                            <li class="item"><a href="">Blog Grid</a></li>
+                            <li class="item"><a href="">Blog Standard</a></li>
+                            <li class="header_menu_cont-li"><a href="#">Single Pages<i class="fa fa-angle-right"
+                                        aria-hidden="true"></i></a>
+                                <ul class=" sub-menu1">
+                                    <li class="item"><a href="">Standard Post</a></li>
+                                    <li class="item"><a href="">Image Post</a></li>
+                                    <li class="item"><a href="">Video Post</a></li>
+                                    <li class="item"><a href="">Audio Post</a></li>
+                                    <li class="item"><a href="">Quote Post</a></li>
+                                    <li class="item"><a href="">Link Post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_cont-li"><a href="#">Shop</a>
+                        <ul class="sub-menu">
+                            <li class="item"><a href="">Product Listing</a></li>
+                            <li class="item"><a href="">Single Product</a></li>
+                            <li class="item "><a href="">Cart</a></li>
+                            <li class="item"><a href="">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_cont-li"><a href="#">Contact</a>
+                        <ul class="sub-menu">
+                            <li class="item"><a href="">Contact with Sidebar</a></li>
+                            <li class="item"><a href="">Contact with Gallery</a></li>
+                            <li class="item"><a href="">With Multiple Maps</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_right">
+            <div class="header_right-center">
+                <div class="header_right-center1">
+                    <div class="header_right-cost">$0.00</div>
+                    <div class="header_right-link"><a href="">0 items - View Cart</a></div>
+                </div>
+                <div class="header_right-right">
+                    <div class="number">0</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content_cart">
+        <h1>Cart</h1>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="container_left">
+                <table class="vincent_cart">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Product</th>
+                            <th><span>Price</span></th>
+                            <th>Quantity</th>
+                            <th><span>Total</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="vincent_cart_item">
+                            <td>
+                                <a class="vincent_product-remove" href="#"> × </a>
+                            </td>
+                            <td class="vincent_product-thumbnail">
+                                <a href="">
+                                    <img src="imgs/pizza_1.png" alt="">
+                                </a>
+                            </td>
+                            <td class="vincent_product-name" data-title="Product">
+                                <a href="">Pepperoni</a>
+                            </td>
+                            <td class="vincent_product-price" data-title="Price">
+                                <span>$2.90</span>
+                            </td>
+                            <td class="vincent_product-quantity" data-title="Quantity">
+                                <input type="text" value="1" name="quantity" class="vincent_quantity">
+                            </td>
+                            <td class="vincent_product-subtotal" data-title="Total">
+                                <span>$2.90</span>
+                            </td>
+                        </tr>
+                        <tr class="vincent_cart_item">
+                            <td>
+                                <a class="vincent_product-remove" href="#"> × </a>
+                            </td>
+                            <td class="vincent_product-thumbnail">
+                                <a href="">
+                                    <img src="imgs/pizza_1.png" alt="">
+                                </a>
+                            </td>
+                            <td class="vincent_product-name" data-title="Product">
+                                <a href="">MARGHERITA</a>
+                            </td>
+                            <td class="vincent_product-price" data-title="Price">
+                                <span>$2.60</span>
+                            </td>
+                            <td class="vincent_product-quantity" data-title="Quantity">
+                                <input type="text" value="1" name="quantity" class="vincent_quantity">
+                            </td>
+                            <td class="vincent_product-subtotal" data-title="Total">
+                                <span>$2.60</span>
+                            </td>
+                        </tr>
+                        <tr class="vincent_cart_item">
+                            <td>
+                                <a class="vincent_product-remove" href="#"> × </a>
+                            </td>
+                            <td class="vincent_product-thumbnail">
+                                <a href="">
+                                    <img src="imgs/pizza_1.png" alt="">
+                                </a>
+                            </td>
+                            <td class="vincent_product-name" data-title="Product">
+                                <a href="">MARGHERITA</a>
+                            </td>
+                            <td class="vincent_product-price" data-title="Price">
+                                <span>$2.60</span>
+                            </td>
+                            <td class="vincent_product-quantity" data-title="Quantity">
+                                <input type="text" value="1" name="quantity" class="vincent_quantity">
+                            </td>
+                            <td class="vincent_product-subtotal" data-title="Total">
+                                <span>$2.60</span>
+                            </td>
+                        </tr>
+                        <tr class="vincent_cart_actions">
+                            <td colspan="6">
+                                <div class="vincent_coupon">
+                                    <input type="text" name="" placeholder="Coupon code">
+                                    <button>Apply coupon</button>
+                                </div>
+                                <button class="vincent_update_cart">Update cart</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="vincent_cart_totals">
+                    <h5>Cart totals</h5>
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>$5.50</td>
+                            <td>$5.50</td>
+                        </tr>
+                    </table>
+                    <a class="vincent_button vincent_button_background" href="">Proceed to checkout</a>
+                </div>
+            </div>
+            <div class="container_right">
+                <form class="container_right-input">
+                    <input type="text" placeholder="search...">
+                    <span class="icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                </form>
+                <div class="about container_right1">
+                    <h3 class="title">FEATURED POSTS</h3>
+                    <div>
+                        <img src="imgs/pizza_1.png" alt="">
+                        <div class="img_content">
+                            <a href=""><span>HEALSY FOOD FOR HEALTHY BODY</span></a>
+                            <p>April 6, 2017</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="imgs/pizza_1.png" alt="">
+                        <div class="img_content">
+                            <a href=""><span>FOOD DESIGN TRENDS 2017</span></a>
+                            <p>April 6, 2017</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about container_right2">
+                    <h3 class="title">BLOG CATEGORIES</h3>
+                    <ul>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Inspiration</a></li>
+                        <li><a href="">Lifestyle</a></li>
+                        <li><a href="">People</a></li>
+                        <li><a href="">Recipes</a></li>
+                        <li><a href="">World</a></li>
+                    </ul>
+                </div>
+                <div class="about container_right3">
+                    <h3 class="title">Tags</h3>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Lifestyle</a></li>
+                        <li><a href="">Margherita</a></li>
+                        <li><a href="">Pizza</a></li>
+                        <li><a href="">Pizzeria</a></li>
+                        <li><a href="">Restaurant</a></li>
+                        <li><a href="">Vincent</a></li>
+                    </ul>
+                </div>
+                <div class="about container_right4">
+                    <h3 class="title">Instafeed</h3>
+                    <ul>
+                        <li><a href=""><img src="./imgs/an1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./imgs/an2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./imgs/an3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./imgs/an4.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./imgs/an5.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./imgs/an6.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__mid">
+            <div class="footer__logo">
+                <img src="imgs/logo.png" alt="LOGO">
+            </div>
+            <div class="footer__phone">
+                <div>
+                    <h3 class="phone">+1 215 456 15 15</h3>
+                    <p class="time">8:00 am – 11:30 pm</p>
+                </div>
+            </div>
+            <ul class="footer__menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">MENU</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <div class="footer__icon">
+                <a href="" class="footer__link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="footer__link"><i class="fab fa-twitter"></i></a>
+                <a href="" class="footer__link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer__text">
+                <p>Copyright © 2018 Vincent. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
