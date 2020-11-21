@@ -182,6 +182,13 @@ header .header_right .header_right-center .header_right-right .number {
     right: -3px;
     z-index: 2
 }
+header .header__bars {
+    display: none;
+}
+header .header__bars i {
+    color: #fff;
+    font-size: 3rem;
+  }
 .content_cart {
     height: 240px;
     width: 100%;
@@ -222,7 +229,7 @@ header .header_right .header_right-center .header_right-right .number {
     float: left;
     max-width: 751px;
     height: auto;
-    margin: 0px 0px 0px 23.25px;
+    /* margin: 0px 0px 0px 23.25px; */
     padding: 75px 0px 0px;
 }
 .content .container .container_left .vincent_cart {
@@ -574,53 +581,156 @@ footer {
     color: white;
   }
 @media screen and (max-width: 1208px) {
-header {
-    text-align: center;
-}
+
 .header_left {
-    z-index: -1000000;
+   z-index: -1000000;
 }
 #header_menu_content .header_menu_cont-li {
     margin: 0 5px;
     letter-spacing: 3px;
 }
 .header_right {
-    z-index: -1000000;
+    display: none;
 }
+header .header__bars {
+    display: block;
+    position: absolute;
+    padding-top: 90px;
+    right: 1.5rem;
+    opacity: 0.7;
+  }
 }
-@media screen and (max-width: 993px){
-    #header_menu_content {
-        display: none;
-    }
-    /* .container {
-        position: relative;
-        height: auto;
-    } */
+@media screen and (max-width: 994px){
     .container_left {
-        /* position: absolute; */
+        /* background-color:rgb(147, 161, 118); */
+        width: 100%;
+        margin-left: 20%;
+    }
+    .container_left .vincent_cart_totals {
         width: 100%;
     }
-    .container_left .vincent_cart{
-        width: 90%;       
+    .container_left .vincent_cart_totals table{
+        width: 100%;
+
     }
-    .container_left .vincent_cart_actions .vincent_coupon {
-        width: 60%;
+
+    .container_right {
+        max-width: 90%;
+        margin-left: 5%;
     }
-    .container_left .vincent_cart_actions input{
+    #header_menu_content .header_menu_cont-li {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container_right {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    footer .footer__menu {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container_left {
+        margin-left: 5%;
+    }
+    .content .container .container_left .vincent_cart td {
+        border-bottom: 1px solid wheat;
+    }
+    .vincent_cart {
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    .vincent_cart th {
+        color: #DCE4E8;
+        background: #252c30;
+        padding: 3px 4px;
+        height: 30px;
+    }
+    .vincent_cart td {
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        padding: 30px 0px;
+    }
+    .container_left .vincent_cart img {
+        display: none;
+    }
+    .vincent_coupon {
+        width: 70%;
+    }
+    .vincent_cart_actions input{
         width: 40%;
+        letter-spacing: 0px;
     }
-    .container_left .vincent_cart_actions button{
-        width: 60%;
-    }
-    .container_left .vincent_cart_actions td > button {
+    .vincent_cart_actions button{
         width: 30%;
+        letter-spacing: 0px;
+    }
+    .vincent_coupon button {
+        width: 50%;
+    }
+    .vincent_cart_totals {
+        width: 80%;
     }
     .container_right {
-        /* position: absolute; */
-        margin-left: 23%;
+        max-width: 88%;
+        margin-left: 5%;
     }
-
 }
-@media screen and (max-width: 630px) {
-
+@media screen and (max-width: 414px) {
+    .container_left {
+        margin-left: 1px;
+    }
+    .vincent_cart a {
+        color: #DCE4E8;
+        font: 16px "Open Sans";
+        margin: auto;
+    }
+    .vincent_cart .vincent_product-quantity input {
+        margin: auto;
+    }
+    .vincent_cart_totals {
+        text-align: center;
+    }
+    .container_right {
+        max-width: 88%;
+        margin-left: 5%;
+    }   
+    .container_right4 img {
+        width: 33%;
+    }
 }
+@media screen and (max-width: 375px) {
+    .container_right {
+        max-width: 90%;
+        margin-left: 4%;
+    }
+    .container_right4 img {
+        width: 33%;
+    }
+    .container_right3  {
+        height: 380px;
+    }
+}
+@media screen and (max-width: 320px) {
+    header .header__bars i {
+        color: #fff;
+        font-size: 2rem;
+      }
+    .container_right {
+        max-width: 90%;
+        margin-left: 4%;
+    }
+    .container_right4 img {
+        width: 33%;
+    }
+    .container_right3  {
+        height: 480px;
+    }
+}
+
